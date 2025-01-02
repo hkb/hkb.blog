@@ -97,8 +97,11 @@ def main():
 
             if 'created_at' not in page:
                 page['created_at'] = datetime.datetime.fromtimestamp(os.path.getctime(file)).strftime('%Y-%m-%d')
+            
             if 'updated_at' not in page:
-                page['updated_at'] = datetime.datetime.fromtimestamp(os.path.getmtime(file)).strftime('%Y-%m-%d')
+                updated_at = datetime.datetime.fromtimestamp(os.path.getmtime(file)).strftime('%Y-%m-%d')
+                if updated_at != page['created_at']:
+                    page['updated_at'] = updated_at
 
             pages.append(page)
 
