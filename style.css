@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-size: 16px;
+}
+
+
+::selection, mark {
+    background-color: rgba(250,226,76,.35);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply 
+        bg-white dark:bg-neutral-900 
+
+        text-neutral-700 dark:text-neutral-300
+
+        antialiased;
+
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+}
+
+header, main, footer {
+    @apply
+        p-4
+        w-full max-w-[45rem] mx-auto;
+}
+
+header, footer {
+    @apply
+        my-0 md:my-8;
+}
+
+footer {
+    @apply
+        text-sm text-neutral-500;
+}
+
+main a {
+    @apply underline hover:text-neutral-900 dark:hover:text-neutral-100;
+}
+
+
+/* texts */
+h1, h2, h3 {
+    @apply
+    block
+    -mb-2
+    font-semibold
+    text-neutral-900 dark:text-neutral-100;
+}
+
+h1 {
+    @apply text-3xl !leading-[1.2em] md:text-5xl tracking-tight;
+}
+
+h2 {
+    @apply mt-12 text-2xl md:text-3xl tracking-tight;
+}
+
+h3 {
+    @apply mt-8 text-xl tracking-tight;
+}
+
+p {
+    @apply block my-4 leading-relaxed;
+}
+
+a {
+    @apply hover:text-neutral-900 dark:hover:text-neutral-100;
+}
+
+
+/* lists */
+ul, ol {
+    list-style: revert;
+
+    @apply pl-6;
+}
+
+ul {
+    @apply list-dash pl-5;
+}
+
+li {
+    @apply py-1 px-2;
+}
+li::marker {
+    @apply text-gray-500;
+}

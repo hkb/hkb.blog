@@ -46,9 +46,12 @@ SINGLE_PAGE = sys.argv[1] if len(sys.argv) > 1 else None
 
 
 def main():
-    with open('CNAME', 'r') as src, open(f'{OUTPUT}/CNAME', 'w') as dst: dst.write(src.read())
-    with open('.nojekyll', 'r') as src, open(f'{OUTPUT}/.nojekyll', 'w') as dst: dst.write(src.read())
+    open(f'{OUTPUT}/.nojekyll', 'w').close()
 
+    if os.path.exists('CNAME'):
+        with open('CNAME', 'r') as src, open(f'{OUTPUT}/CNAME', 'w') as dst:
+            dst.write(src.read())
+    
     src_files = get_all_file_paths(INPUT)
 
     pages = []

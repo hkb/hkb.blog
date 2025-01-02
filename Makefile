@@ -16,7 +16,7 @@ deploy:
 	@read x
 	git add .site -f
 	git commit -m "deploy"
-	git push origin `git subtree split --prefix .site main`:gh-pages --force
+	git push origin `git subtree split --prefix .site master`:gh-pages --force
 	git reset --soft HEAD~1
 	git rm -r --cached .site
 	

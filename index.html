@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <meta name="description" content="{{ description }}">
-</head>
-<body>
-    <header>
-        <h1>Welcome to my blog</h1>
-        <p>I write about how to make work more joyful.</p>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>{{ title }}</title>
+        <meta name="description" content="{{ description }}">
+        <meta name="keywords" content="{{ keywords }}">
+        <link rel="icon" type="image/png" href="/images/favicon.png">
 
-    <main>
-        <article>
-            {{ content }}
-        </article>
-    </main>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="flex justify-between items-center">
+            <a href="/"><b class="font-semibold text-neutral-950 dark:text-neutral-50">hkb.blog</b></a>
+            
+            <nav class="flex gap-6">
+                <a href="/posts">Posts</a>
+                <a href="/about">About</a>
+            </nav>
+        </header>
 
-    <footer>
-        <p>&copy; 2025. All rights reserved.</p>
-    </footer>
-</body>
+        <main>
+            <article>
+                {{ content }}
+            </article>
+        </main>
+
+        <footer class="md:flex justify-between items-center">
+            <p class="grow flex gap-4 items-center justify-start">
+                <img src="/images/profile.png" alt="Hans-Kristian Bjerregaard" class="h-8 md:h-12 rounded-full">
+                <img src="/images/signature.svg" alt="Hans-Kristian Bjerregaard" class="h-6 md:h-8">
+            </p>
+            <p class="flex gap-4">
+                <a href="/feed.xml">RSS</a>
+                <a href="https://x.com/FlotFyr86">Twitter</a>
+                <a href="https://www.linkedin.com/in/hans-kristian-bjerregaard/">LinkedIn</a>
+            </p>
+        </footer>
+    </body>
 </html>
