@@ -9,15 +9,12 @@ unlisted: true
     Here you can find all my posts.
 </p>
 
-<ul class="flex flex-col gap-6">
+<div class="mt-12 space-y-6">
     {% assign sorted_pages = pages | has_not: "unlisted" | sort: "created_at" | reverse %}
     {% for post in sorted_pages %}
-    <li>
-        <a href="{{ post.url }}" class="flex flex-col gap-1">
-            <h2 class="font-semibold">{{ post.title }}</h2>
-            <p class="text-neutral-600 dark:text-neutral-400">{{ post.description }}</p>
-            <time datetime="{{ post.created_at }}" class="text-sm text-neutral-500">{{ post.created_at }}</time>
+        <a href="{{ post.url }}" class="flex gap-4 no-underline">
+            <time datetime="{{ post.created_at }}" class="scale-90 font-mono text-neutral-500">{{ post.created_at }}</time>
+            <div class="font-medium">{{ post.title }}</div>
         </a>
-    </li>
     {% endfor %}
-</ul>
+</div>
