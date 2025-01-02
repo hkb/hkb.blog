@@ -95,6 +95,11 @@ def main():
             if 'image' not in page:
                 pass#page['image'] = generate_open_graph_image(page)
 
+            if 'created_at' not in page:
+                page['created_at'] = datetime.datetime.fromtimestamp(os.path.getctime(file)).strftime('%Y-%m-%d')
+            if 'updated_at' not in page:
+                page['updated_at'] = datetime.datetime.fromtimestamp(os.path.getmtime(file)).strftime('%Y-%m-%d')
+
             pages.append(page)
 
     # render pages
@@ -106,6 +111,7 @@ def main():
     environment.add_filter('get_tag_list', get_tag_list)
     environment.add_filter('format_tags', format_tags)
     environment.add_filter('has', lambda ps, key: list(filter(lambda p: bool(p.get(key)), ps)))
+    environment.add_filter('has_not', lambda ps, key: list(filter(lambda p: not bool(p.get(key)), ps)))
     environment.add_filter('has_tag', lambda ps, tag: list(filter(lambda p: tag in p.get('tags', ''), ps)))
     environment.add_filter('reading_time', lambda s: max(int(count_real_words(s) / 200), 1))
     environment.add_filter('url_starts_with', lambda ps, prefix: list(filter(lambda p: p['url'].startswith(prefix), ps)))
@@ -127,6 +133,9 @@ def main():
     print('🗺️', 'sitemap.xml')
     write(OUTPUT + '/sitemap.xml', sitemap(pages))
 
+    print('🤖', 'llms.txt') 
+    write(OUTPUT + '/llms.txt', make_llms(pages))
+
     print('📰', 'feed.xml') 
     write(OUTPUT + '/feed.xml', feed(pages))
     
@@ -140,8 +149,8 @@ def sitemap(pages):
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 
     for page in pages:
-        # skip indexing
-        if page.get('index') == 'no' or page['url'].startswith('/thank-you/'):
+        # skip 404 pages
+        if page['url'] == '/404':
             continue
 
         # add to sitemap
@@ -157,18 +166,32 @@ def sitemap(pages):
 
     return ''.join(sitemap)
 
+def make_llms(pages):
+    llms = ['# Hans Kristian Bjerregaard\'s Blog\n']
+
+    llms.append('## Posts\n')
+
+    for page in pages:
+        # skip 404 pages
+        if page['url'] == '/404':
+            continue
+       
+        llms.append(f"- [{page['title']}](https://hkb.blog{page['url']}): {page['description']}")
+
+    return '\n'.join(llms)
+
 def feed(pages):
     feed = ['<feed xmlns="http://www.w3.org/2005/Atom">']
-    feed.append('<title>Update Mate Blog</title>')
-    feed.append('<subtitle>We write about how to make work more joyful.</subtitle>')
+    feed.append('<title>Hans Kristian Bjerregaard\'s Blog</title>')
+    feed.append('<subtitle>We write about how to make fellow entrepreneurs learn from my mistakes.</subtitle>')
     feed.append('<link href="https://hkb.blog/feed.xml" rel="self"/>')
     feed.append('<link href="https://hkb.blog/"/>')
     feed.append(f'<updated>{str(datetime.datetime.now())}</updated>')
     feed.append('<id>https://hkb.blog/</id>')
 
     for page in pages:
-        # skip indexing
-        if not page['url'].startswith('/blog/'):
+        # skip unlisted pages
+        if page.get('unlisted'):
             continue
 
         feed.append('<entry>')

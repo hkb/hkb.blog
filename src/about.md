@@ -1,6 +1,7 @@
 ---
 title: Why Entrepreneurs Should Share Their Knowledge
 description: The importance of knowledge sharing in entrepreneurship and how it benefits both individuals and the broader business community.
+unlisted: true
 ---
 
 # About
