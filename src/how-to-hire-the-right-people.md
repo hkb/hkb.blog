@@ -1,125 +1,72 @@
 ---
-title: How to Hire the Right People
-description: A guide to hiring employees who will excel in their roles and contribute to your organization's success.
+title: How I hire the right people
+description: My guide to hiring employees who will excel in their roles and contribute to your organization's success.
 keywords: hiring, recruitment, talent acquisition, interviewing, employee selection
 ---
 
-# How to Hire the Right People
+# How to hire people that will actually be great at the job
 
-Finding and hiring the right people is one of the most crucial responsibilities of any leader. The success of your organization largely depends on having talented, motivated individuals who align with your company's values and can excel in their roles.
+Most people when they hire make one big mistake — they focus too much on talking. 
 
-## Define What "Right" Means
+It's all about interviews and talking, and what happens when you hire only using talking? You end up hiring the talkers. 
 
-Before starting the hiring process, clearly define:
-- Essential skills and qualifications
-- Cultural fit characteristics
-- Growth potential requirements
-- Role-specific competencies
-- Team dynamics considerations
+You hire people who are great at selling themselves, but that's not who you want. You want people who are great at actually doing the job and getting stuff done. 
 
-## Look Beyond the Resume
+That's what this post is about—how to set up a hiring process that finds doers, not talkers.
 
-While experience and qualifications matter, consider:
-1. Problem-solving abilities
-2. Learning capacity
-3. Emotional intelligence
-4. Communication skills
-5. Adaptability
-6. Cultural alignment
+## What I do to simulate real work
 
-## Structure Your Interview Process
+The most important thing when hiring is to simulate the work experience. You want to test for everything that goes into doing the job well. This is not just about finding good candidates—it's also about starting the onboarding process early so new hires can hit the ground running.
 
-Create a consistent evaluation framework:
-- Initial screening calls
-- Technical assessments
-- Behavioral interviews
-- Team fit conversations
-- Reference checks
+Forget long interviews full of talking. Instead, give candidates tasks that match real work. You'll quickly see if they're capable. Plus, they'll get a better sense of what working with you is like.
 
-## Ask the Right Questions
 
-Focus on questions that reveal:
-- Past experiences and achievements
-- Decision-making processes
-- Handling of challenges
-- Collaboration style
-- Career aspirations
-- Values and motivations
+## By blueprint for hiring doers
 
-## Watch for Red Flags
+I let every hiring process be unique and let it follow its own flow but i always start out with this blueprint.
 
-Pay attention to:
-- Inconsistent responses
-- Lack of preparation
-- Poor listening skills
-- Negative attitudes about previous employers
-- Misalignment with company values
 
-## Involve the Team
+### Step 1: How I write job posts that stand out
 
-Benefits of team involvement:
-- Multiple perspectives
-- Cultural fit assessment
-- Future colleague buy-in
-- Reduced hiring bias
-- Better integration planning
+A job post shouldn't just list skills and experience. Instead, focus on what's in it for the candidate. What does everyday work look like? What are your rhythms and values? You want to attract people who are excited about how you work, not just those who meet the requirements.
 
-## Test for Real Skills
+Also, add something to filter out generic applications. Ask for something simple, like "Give us three reasons why you want to work here." This shows if they've done their homework and really care.
 
-Consider implementing:
-- Practical assignments
-- Role-playing exercises
-- Technical assessments
-- Problem-solving scenarios
-- Trial periods when appropriate
+### Step 2: Test your **work chemestry**
 
-## Check References Thoroughly
+Once you have some good candidates, start with a quick 10-20 minute call. I call this a virtual coffee. It's not about what you talk about but about how it feels. Do you have good work chemistry? Is this someone you'd enjoy working with? If not, don't waste time.
 
-When checking references:
-- Speak with direct supervisors
-- Verify key achievements
-- Ask about growth areas
-- Discuss work style
-- Confirm cultural fit
+### Step 3: My approach to work tasks
 
-## Trust Your Instincts (But Verify)
+The main part of your hiring process should always be a task that simulates real work. This task should:
 
-While gut feelings matter:
-- Back them with data
-- Seek multiple opinions
-- Document observations
-- Compare candidates objectively
-- Challenge your biases
+ - Be something they'd actually do on the job.
+ - Test key skills.
+ - Act as a light onboarding experience.
 
-## Focus on Potential
+For example, have developers build something small. Ask sales candidates to record a pitch. Have marketers create a sample campaign. The task should be simple enough that it doesn't take more than two hours for the right candidate. This shows not just their skills but also how proactive they are.
 
-Look for candidates who:
-- Show eagerness to learn
-- Demonstrate adaptability
-- Have growth mindset
-- Take initiative
-- Show leadership potential
+### Step 4: What I look for in the deep interview
 
-## Consider Long-term Fit
+After the work task, it's time for a deep interview. By now, you know they can do the job, and you've got a good vibe. This interview is about digging deeper and confirming your impressions.
 
-Evaluate:
-- Career growth alignment
-- Company trajectory fit
-- Role evolution potential
-- Leadership capabilities
-- Long-term commitment indicators
+Focus on why they made certain decisions:
 
-## Make a Competitive Offer
+ - *Why* did they choose a particular solution?
+ - *Why* did they switch jobs?
+ - *Why* did they take on certain projects?
 
-Remember to:
-- Research market rates
-- Consider total compensation
-- Highlight growth opportunities
-- Emphasize company benefits
-- Be transparent about expectations
+Keep asking "why." You want to know if their reasoning aligns with how you think.
 
-## Conclusion
+### Step 5: How I check references
 
-Hiring the right people requires a balanced approach of structured evaluation, careful assessment, and thoughtful consideration of both immediate and long-term fit. By following these guidelines and maintaining high standards throughout the hiring process, you'll increase your chances of building a strong, capable team that drives your organization's success.
+The best way to check references is to ask the candidate what each manager from their last three jobs would say about them. This tests their self-awareness. Then, ask if you can call those managers.
 
-Remember: A bad hire can cost significantly more than taking the time to find the right person. Invest in your hiring process, and you'll reap the rewards of a talented, engaged workforce.
+You're going to be their next manager. So, whatever patterns their previous managers mention, you're likely to see too. People rarely change drastically.
+
+
+## My key takeaway: find doers, not talkers
+
+Don't waste time hiring people who are just good at talking. Build your process around tasks and real work. This way, you'll find candidates who are ready to do the job and fit right into your team.
+
+If you want doers, change how you hire.
